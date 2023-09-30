@@ -9715,30 +9715,70 @@ var $;
 (function ($) {
     var $$;
     (function ($$) {
+        class Position extends $mol_object {
+            options() {
+                return { enableHighAccuracy: true };
+            }
+            watcher() {
+                const id = this.$.$mol_dom_context.navigator.geolocation.watchPosition($mol_wire_async((val) => this.value(val)), $mol_wire_async((error) => this.error(error)), this.options());
+                return { destructor: () => this.$.$mol_dom_context.navigator.geolocation.clearWatch(id) };
+            }
+            value(next) {
+                this.watcher();
+                return next ?? null;
+            }
+            error(next) {
+                this.watcher();
+                return next ?? null;
+            }
+            accuracy() {
+                return this.value()?.coords?.accuracy;
+            }
+            altitude() {
+                return this.value()?.coords?.altitude;
+            }
+            altitudeAccuracy() {
+                return this.value()?.coords?.altitudeAccuracy;
+            }
+            heading() {
+                return this.value()?.coords?.heading;
+            }
+            latitude() {
+                return this.value()?.coords?.latitude;
+            }
+            longitude() {
+                return this.value()?.coords?.longitude;
+            }
+            speed() {
+                return this.value()?.coords?.speed;
+            }
+            timestamp() {
+                return this.value()?.timestamp;
+            }
+        }
+        __decorate([
+            $mol_mem
+        ], Position.prototype, "watcher", null);
+        __decorate([
+            $mol_mem
+        ], Position.prototype, "value", null);
+        __decorate([
+            $mol_mem
+        ], Position.prototype, "error", null);
         class $hype_escape_map extends $.$hype_escape_map {
             get $() {
                 return super.$.$mol_ambient({
                     $hyoo_map_pane: $hype_escape_pane,
                 });
             }
-            getCurrentPositioin() {
-                return new Promise((res, rej) => {
-                    this.$.$mol_dom_context.navigator.geolocation.getCurrentPosition(res, rej, { enableHighAccuracy: true });
-                });
+            position() {
+                return new Position;
             }
             position_x() {
-                return this.position().coords.longitude;
+                return this.position().longitude() ?? 0;
             }
             position_y() {
-                return this.position().coords.latitude;
-            }
-            position() {
-                const res = $mol_wire_sync(this).getCurrentPositioin();
-                console.log(res);
-                return res;
-            }
-            position_now(next) {
-                return next;
+                return this.position().latitude() ?? 0;
             }
         }
         __decorate([
@@ -9746,13 +9786,13 @@ var $;
         ], $hype_escape_map.prototype, "$", null);
         __decorate([
             $mol_mem
+        ], $hype_escape_map.prototype, "position", null);
+        __decorate([
+            $mol_mem
         ], $hype_escape_map.prototype, "position_x", null);
         __decorate([
             $mol_mem
         ], $hype_escape_map.prototype, "position_y", null);
-        __decorate([
-            $mol_mem
-        ], $hype_escape_map.prototype, "position_now", null);
         $$.$hype_escape_map = $hype_escape_map;
     })($$ = $.$$ || ($.$$ = {}));
 })($ || ($ = {}));

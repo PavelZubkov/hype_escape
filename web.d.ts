@@ -2552,14 +2552,31 @@ declare namespace $.$$ {
 }
 
 declare namespace $.$$ {
-    class $hype_escape_map extends $.$hype_escape_map {
+    class Position extends $mol_object {
+        options(): {
+            enableHighAccuracy: boolean;
+        };
+        watcher(): {
+            destructor: () => void;
+        };
+        value(next?: GeolocationPosition): GeolocationPosition | null;
+        error(next?: GeolocationPositionError): GeolocationPositionError | null;
+        accuracy(): number | undefined;
+        altitude(): number | null | undefined;
+        altitudeAccuracy(): number | null | undefined;
+        heading(): number | null | undefined;
+        latitude(): number | undefined;
+        longitude(): number | undefined;
+        speed(): number | null | undefined;
+        timestamp(): number | undefined;
+    }
+    export class $hype_escape_map extends $.$hype_escape_map {
         get $(): typeof $$;
-        getCurrentPositioin(): Promise<GeolocationPosition>;
+        position(): Position;
         position_x(): number;
         position_y(): number;
-        position(): GeolocationPosition;
-        position_now(next?: GeolocationPosition): GeolocationPosition | undefined;
     }
+    export {};
 }
 
 declare namespace $ {
