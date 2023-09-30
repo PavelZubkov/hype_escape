@@ -1,5 +1,12 @@
 namespace $.$$ {
 	export class $hype_escape_map extends $.$hype_escape_map {
+
+		@ $mol_memo.field
+        get $() {
+          return super.$.$mol_ambient({
+            $hyoo_map_pane: $hype_escape_pane as any,
+          })
+        }
 		
 		getCurrentPositioin(): Promise<GeolocationPosition> {
 			return new Promise<GeolocationPosition>((res, rej) => {
