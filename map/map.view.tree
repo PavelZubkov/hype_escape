@@ -1,0 +1,11 @@
+$hype_escape_map $hyoo_map
+	main_sub /
+		<= Pane
+		<= Attribution
+	graphs /
+		<= Tiles
+		<= Position $mol_plot_dot
+			repos_x!val <= geo_to_tile_x!val
+			repos_y!val <= geo_to_tile_y!val
+			series_x / <= position_x 0
+			series_y / <= position_y 0
