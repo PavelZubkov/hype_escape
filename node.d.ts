@@ -2670,8 +2670,20 @@ declare namespace $ {
     }
 }
 
+declare namespace $ {
+    class $hype_escape_pane extends $hyoo_map_pane {
+    }
+}
+
+declare namespace $.$$ {
+    class $hype_escape_pane extends $.$hype_escape_pane {
+        graphs_visible(): readonly $.$mol_plot_graph[];
+    }
+}
+
 declare namespace $.$$ {
     class $hype_escape_map extends $.$hype_escape_map {
+        get $(): typeof $$;
         getCurrentPositioin(): Promise<GeolocationPosition>;
         position_x(): number;
         position_y(): number;

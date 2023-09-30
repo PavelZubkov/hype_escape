@@ -681,4 +681,6 @@ $hype_escape_map $hyoo_map
 			series_x / <= position_x 0
 			series_y / <= position_y 0
 
+$hype_escape_pane $hyoo_map_pane
+
 $hype_escape_app $hype_escape_map

@@ -212,7 +212,8 @@
     "$mol_offline_install",
     "$mol_offline",
     "$mol_plot_dot",
-    "$mol_coord"
+    "$mol_coord",
+    "$hype_escape_pane"
   ],
   "dependencies": {
     "jsdom": "*",

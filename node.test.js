@@ -9678,9 +9678,41 @@ var $;
 "use strict";
 var $;
 (function ($) {
+    class $hype_escape_pane extends $hyoo_map_pane {
+    }
+    $.$hype_escape_pane = $hype_escape_pane;
+})($ || ($ = {}));
+//hype/escape/pane/-view.tree/pane.view.tree.ts
+;
+"use strict";
+var $;
+(function ($) {
+    var $$;
+    (function ($$) {
+        class $hype_escape_pane extends $.$hype_escape_pane {
+            graphs_visible() {
+                return this.graphs_positioned();
+            }
+        }
+        __decorate([
+            $mol_mem
+        ], $hype_escape_pane.prototype, "graphs_visible", null);
+        $$.$hype_escape_pane = $hype_escape_pane;
+    })($$ = $.$$ || ($.$$ = {}));
+})($ || ($ = {}));
+//hype/escape/pane/pane.view.ts
+;
+"use strict";
+var $;
+(function ($) {
     var $$;
     (function ($$) {
         class $hype_escape_map extends $.$hype_escape_map {
+            get $() {
+                return super.$.$mol_ambient({
+                    $hyoo_map_pane: $hype_escape_pane,
+                });
+            }
             getCurrentPositioin() {
                 return new Promise((res, rej) => {
                     this.$.$mol_dom_context.navigator.geolocation.getCurrentPosition(res, rej, { enableHighAccuracy: true });
@@ -9701,6 +9733,9 @@ var $;
                 return next;
             }
         }
+        __decorate([
+            $mol_memo.field
+        ], $hype_escape_map.prototype, "$", null);
         __decorate([
             $mol_mem
         ], $hype_escape_map.prototype, "position_x", null);
