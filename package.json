@@ -132,6 +132,7 @@
     "$mol_style_pseudo",
     "$mol_type_error",
     "$mol_style_sheet",
+    "$mol_type_enforce",
     "$mol_button_minor",
     "$mol_button",
     "$mol_speck",
