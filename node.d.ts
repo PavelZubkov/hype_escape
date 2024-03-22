@@ -1235,17 +1235,17 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_pop_bubble__align__V5UFIJZC = $mol_type_enforce<
+	type $mol_pop_bubble__align__SCOLJ7Y5 = $mol_type_enforce<
 		ReturnType< $mol_pop['align'] >
 		,
 		ReturnType< $mol_pop_bubble['align'] >
 	>
-	type $mol_pop_bubble__content__T2EHE5NW = $mol_type_enforce<
+	type $mol_pop_bubble__content__D64B6ONP = $mol_type_enforce<
 		ReturnType< $mol_pop['bubble_content'] >
 		,
 		ReturnType< $mol_pop_bubble['content'] >
 	>
-	type $mol_pop_bubble__height_max__6HBUB7K4 = $mol_type_enforce<
+	type $mol_pop_bubble__height_max__GOM33ZO1 = $mol_type_enforce<
 		ReturnType< $mol_pop['height_max'] >
 		,
 		ReturnType< $mol_pop_bubble['height_max'] >
@@ -1591,12 +1591,12 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_hotkey__mod_ctrl__6ROG5LOI = $mol_type_enforce<
+	type $mol_hotkey__mod_ctrl__P971463V = $mol_type_enforce<
 		ReturnType< $mol_string['submit_with_ctrl'] >
 		,
 		ReturnType< $mol_hotkey['mod_ctrl'] >
 	>
-	type $mol_hotkey__key__VPP1NCUS = $mol_type_enforce<
+	type $mol_hotkey__key__D0UIG4EL = $mol_type_enforce<
 		({ 
 			enter( next?: ReturnType< $mol_string['submit'] > ): ReturnType< $mol_string['submit'] >,
 		}) 
@@ -1734,7 +1734,7 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_svg_path__geometry__76VDKROR = $mol_type_enforce<
+	type $mol_svg_path__geometry__8S77K92J = $mol_type_enforce<
 		ReturnType< $mol_icon['path'] >
 		,
 		ReturnType< $mol_svg_path['geometry'] >
@@ -1782,7 +1782,7 @@ declare namespace $ {
 //# sourceMappingURL=speck.view.tree.d.ts.map
 declare namespace $ {
 
-	type $mol_speck__value__KWSHTXN7 = $mol_type_enforce<
+	type $mol_speck__value__85SXXILT = $mol_type_enforce<
 		ReturnType< $mol_button['error'] >
 		,
 		ReturnType< $mol_speck['value'] >
@@ -1863,14 +1863,14 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_view__style__AUUVIEAZ = $mol_type_enforce<
+	type $mol_view__style__KVDSTWXA = $mol_type_enforce<
 		({ 
 			'paddingTop': ReturnType< $mol_list['gap_before'] >,
 		}) 
 		,
 		ReturnType< $mol_view['style'] >
 	>
-	type $mol_view__style__Y9I2VM25 = $mol_type_enforce<
+	type $mol_view__style__WLDHEUIB = $mol_type_enforce<
 		({ 
 			'paddingTop': ReturnType< $mol_list['gap_after'] >,
 		}) 
@@ -2038,12 +2038,12 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_paragraph__sub__Z63HXZ2K = $mol_type_enforce<
+	type $mol_paragraph__sub__MIIGIJAL = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_paragraph['sub'] >
 	>
-	type $mol_paragraph__sub__P45GKJ8F = $mol_type_enforce<
+	type $mol_paragraph__sub__HEVK64RV = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_paragraph['sub'] >
@@ -2075,99 +2075,99 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_hotkey__key__5AXRCHUG = $mol_type_enforce<
+	type $mol_hotkey__key__7HDM9GKU = $mol_type_enforce<
 		({ 
 			escape( next?: ReturnType< $mol_search['clear'] > ): ReturnType< $mol_search['clear'] >,
 		}) 
 		,
 		ReturnType< $mol_hotkey['key'] >
 	>
-	type $mol_nav__keys_y__HHN532CX = $mol_type_enforce<
+	type $mol_nav__keys_y__XQD7OOPS = $mol_type_enforce<
 		ReturnType< $mol_search['nav_components'] >
 		,
 		ReturnType< $mol_nav['keys_y'] >
 	>
-	type $mol_nav__current_y__W75ZQFKL = $mol_type_enforce<
+	type $mol_nav__current_y__XOJGNA8I = $mol_type_enforce<
 		ReturnType< $mol_search['nav_focused'] >
 		,
 		ReturnType< $mol_nav['current_y'] >
 	>
-	type $mol_string__value__M84R6IKH = $mol_type_enforce<
+	type $mol_string__value__EZU3DKQD = $mol_type_enforce<
 		ReturnType< $mol_search['query'] >
 		,
 		ReturnType< $mol_string['value'] >
 	>
-	type $mol_string__hint__BDEWVVH2 = $mol_type_enforce<
+	type $mol_string__hint__LI6BGH22 = $mol_type_enforce<
 		ReturnType< $mol_search['hint'] >
 		,
 		ReturnType< $mol_string['hint'] >
 	>
-	type $mol_string__submit__HKH6UL22 = $mol_type_enforce<
+	type $mol_string__submit__C01UGZYB = $mol_type_enforce<
 		ReturnType< $mol_search['submit'] >
 		,
 		ReturnType< $mol_string['submit'] >
 	>
-	type $mol_string__enabled__QRUVT9BR = $mol_type_enforce<
+	type $mol_string__enabled__70JOR2PE = $mol_type_enforce<
 		ReturnType< $mol_search['enabled'] >
 		,
 		ReturnType< $mol_string['enabled'] >
 	>
-	type $mol_string__keyboard__GTDQ8T1G = $mol_type_enforce<
+	type $mol_string__keyboard__CB3BIQJN = $mol_type_enforce<
 		ReturnType< $mol_search['keyboard'] >
 		,
 		ReturnType< $mol_string['keyboard'] >
 	>
-	type $mol_string__enter__0F3GFANP = $mol_type_enforce<
+	type $mol_string__enter__L979AZTZ = $mol_type_enforce<
 		ReturnType< $mol_search['enter'] >
 		,
 		ReturnType< $mol_string['enter'] >
 	>
-	type $mol_button_minor__hint__HQGQGYN0 = $mol_type_enforce<
+	type $mol_button_minor__hint__RCI6HBK0 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_button_minor['hint'] >
 	>
-	type $mol_button_minor__click__ZQ0AHVUR = $mol_type_enforce<
+	type $mol_button_minor__click__0Y24NFDU = $mol_type_enforce<
 		ReturnType< $mol_search['clear'] >
 		,
 		ReturnType< $mol_button_minor['click'] >
 	>
-	type $mol_button_minor__sub__V0XUJA97 = $mol_type_enforce<
+	type $mol_button_minor__sub__5KWHFX9Y = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_button_minor['sub'] >
 	>
-	type $mol_list__rows__TI5OKR35 = $mol_type_enforce<
+	type $mol_list__rows__NO32F9ZV = $mol_type_enforce<
 		ReturnType< $mol_search['menu_items'] >
 		,
 		ReturnType< $mol_list['rows'] >
 	>
-	type $mol_dimmer__haystack__BDH9F5GU = $mol_type_enforce<
+	type $mol_dimmer__haystack__CKNSU2IX = $mol_type_enforce<
 		ReturnType< $mol_search['suggest_label'] >
 		,
 		ReturnType< $mol_dimmer['haystack'] >
 	>
-	type $mol_dimmer__needle__WZQ67V3S = $mol_type_enforce<
+	type $mol_dimmer__needle__N3BGFEKH = $mol_type_enforce<
 		ReturnType< $mol_search['query'] >
 		,
 		ReturnType< $mol_dimmer['needle'] >
 	>
-	type $mol_search_plugins__T8OAEZLI = $mol_type_enforce<
+	type $mol_search_plugins__FNLEJB02 = $mol_type_enforce<
 		ReturnType< $mol_pop['plugins'] >[number]
 		,
 		$mol_plugin
 	>
-	type $mol_view__sub__7QAU0KA5 = $mol_type_enforce<
+	type $mol_view__sub__L8MV5STE = $mol_type_enforce<
 		ReturnType< $mol_search['anchor_content'] >
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_button_minor__click__J697NL40 = $mol_type_enforce<
+	type $mol_button_minor__click__906IT498 = $mol_type_enforce<
 		ReturnType< $mol_search['suggest_select'] >
 		,
 		ReturnType< $mol_button_minor['click'] >
 	>
-	type $mol_button_minor__sub__8ILINWYW = $mol_type_enforce<
+	type $mol_button_minor__sub__C36WFMXW = $mol_type_enforce<
 		ReturnType< $mol_search['suggest_content'] >
 		,
 		ReturnType< $mol_button_minor['sub'] >
@@ -2234,7 +2234,7 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_view__sub__DCRCK2PN = $mol_type_enforce<
+	type $mol_view__sub__II0XM8X0 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
@@ -2411,12 +2411,12 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_image__uri__AVHXE114 = $mol_type_enforce<
+	type $mol_image__uri__TRWDGK1E = $mol_type_enforce<
 		ReturnType< $mol_link_iconed['icon'] >
 		,
 		ReturnType< $mol_image['uri'] >
 	>
-	type $mol_image__title__RYZJBCGE = $mol_type_enforce<
+	type $mol_image__title__TMF4IWI5 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_image['title'] >
@@ -2567,77 +2567,77 @@ declare namespace $ {
 //# sourceMappingURL=title.view.tree.d.ts.map
 declare namespace $ {
 
-	type $mol_vector_range__T58PMEG2 = $mol_type_enforce<
+	type $mol_vector_range__25WQVAG7 = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__N2P46PFE = $mol_type_enforce<
+	type $mol_vector_range__RJ54ZNZY = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__TQDM59DZ = $mol_type_enforce<
+	type $mol_vector_range__W74TDBVZ = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__0YTTLJJ1 = $mol_type_enforce<
+	type $mol_vector_range__RZ0HK1IK = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__2BY09APC = $mol_type_enforce<
+	type $mol_vector_range__YHDDWZVU = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__GNTFG12T = $mol_type_enforce<
+	type $mol_vector_range__I01MT1O7 = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__HNBVAU3S = $mol_type_enforce<
+	type $mol_vector_range__BV06LAOQ = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__46KV4GYB = $mol_type_enforce<
+	type $mol_vector_range__JHRE22WF = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_2d__N1ZDK81J = $mol_type_enforce<
+	type $mol_vector_2d__8YI4L6Z0 = $mol_type_enforce<
 		[ ReturnType< $mol_plot_graph['viewport_x'] >, ReturnType< $mol_plot_graph['viewport_y'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<$mol_vector_range<number>> >
 	>
-	type $mol_vector_2d__P5DIMF9S = $mol_type_enforce<
+	type $mol_vector_2d__67W9E7TZ = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__38FXETZQ = $mol_type_enforce<
+	type $mol_vector_2d__5PYHP8I9 = $mol_type_enforce<
 		[ ReturnType< $mol_plot_graph['dimensions_pane_x'] >, ReturnType< $mol_plot_graph['dimensions_pane_y'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<$mol_vector_range<number>> >
 	>
-	type $mol_vector_2d__EVOBKKWA = $mol_type_enforce<
+	type $mol_vector_2d__2WJATDMJ = $mol_type_enforce<
 		[ ReturnType< $mol_plot_graph['dimensions_x'] >, ReturnType< $mol_plot_graph['dimensions_y'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<$mol_vector_range<number>> >
 	>
-	type $mol_vector_2d__SWH2TX1J = $mol_type_enforce<
+	type $mol_vector_2d__1X6H5SO9 = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__8DXR9XJ2 = $mol_type_enforce<
+	type $mol_vector_2d__QFHVR98D = $mol_type_enforce<
 		[ ReturnType< $mol_plot_graph['gap_x'] >, ReturnType< $mol_plot_graph['gap_y'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<$mol_vector_range<number>> >
 	>
-	type $mol_svg_title__title__328ZJ6V2 = $mol_type_enforce<
+	type $mol_svg_title__title__XYE7NXKV = $mol_type_enforce<
 		ReturnType< $mol_plot_graph['hint'] >
 		,
 		ReturnType< $mol_svg_title['title'] >
@@ -2752,24 +2752,24 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_svg_image__style__8101VDR8 = $mol_type_enforce<
+	type $mol_svg_image__style__R8X00L1E = $mol_type_enforce<
 		({ 
 			'transform': ReturnType< $mol_plot_map_tiles['tile_transform'] >,
 		}) 
 		,
 		ReturnType< $mol_svg_image['style'] >
 	>
-	type $mol_svg_image__uri__ZC5CJF0G = $mol_type_enforce<
+	type $mol_svg_image__uri__MSDFP92E = $mol_type_enforce<
 		ReturnType< $mol_plot_map_tiles['tile_uri'] >
 		,
 		ReturnType< $mol_svg_image['uri'] >
 	>
-	type $mol_svg_image__pos__MD1OFKGD = $mol_type_enforce<
+	type $mol_svg_image__pos__5G4TQYOH = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_svg_image['pos'] >
 	>
-	type $mol_svg_image__size__RHQJ22QC = $mol_type_enforce<
+	type $mol_svg_image__size__S1QBELG8 = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_svg_image['size'] >
@@ -2806,17 +2806,17 @@ declare namespace $.$$ {
 
 declare namespace $ {
 
-	type $mol_vector_2d__43YVHMCL = $mol_type_enforce<
+	type $mol_vector_2d__ZUTKA7QK = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__5SEACLN7 = $mol_type_enforce<
+	type $mol_vector_2d__I0DHLDGU = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__R5B6CQPI = $mol_type_enforce<
+	type $mol_vector_2d__A4APCJI2 = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
@@ -2894,147 +2894,147 @@ declare namespace $.$$ {
 
 declare namespace $ {
 
-	type $mol_vector_range__FKBV1POZ = $mol_type_enforce<
+	type $mol_vector_range__QJTUFAU8 = $mol_type_enforce<
 		[ ReturnType< $mol_plot_pane['gap_left'] >, ReturnType< $mol_plot_pane['gap_right'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__T5YLSEYY = $mol_type_enforce<
+	type $mol_vector_range__91RA58G3 = $mol_type_enforce<
 		[ ReturnType< $mol_plot_pane['gap_bottom'] >, ReturnType< $mol_plot_pane['gap_top'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__6LCY2F0O = $mol_type_enforce<
+	type $mol_vector_range__N6ZUT16R = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__7RMYX7QN = $mol_type_enforce<
+	type $mol_vector_range__VY7XPRN8 = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__GJ0MFS3A = $mol_type_enforce<
+	type $mol_vector_range__5MKIL826 = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__89ERTRQB = $mol_type_enforce<
+	type $mol_vector_range__KBYZTDHH = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__MN3P8TJY = $mol_type_enforce<
+	type $mol_vector_range__Y3DKY853 = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__FQDUOWDF = $mol_type_enforce<
+	type $mol_vector_range__KWQWI5WS = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__8C5TCH4U = $mol_type_enforce<
+	type $mol_vector_range__GOBI47GS = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_vector_range__5FOYQMSI = $mol_type_enforce<
+	type $mol_vector_range__VFL0461C = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_range<number> >
 	>
-	type $mol_touch__zoom__13L9OW7I = $mol_type_enforce<
+	type $mol_touch__zoom__UFTVW7H5 = $mol_type_enforce<
 		ReturnType< $mol_plot_pane['zoom'] >
 		,
 		ReturnType< $mol_touch['zoom'] >
 	>
-	type $mol_touch__pan__N3C5W70C = $mol_type_enforce<
+	type $mol_touch__pan__AZGRBJXZ = $mol_type_enforce<
 		ReturnType< $mol_plot_pane['shift'] >
 		,
 		ReturnType< $mol_touch['pan'] >
 	>
-	type $mol_touch__allow_draw__3GCL40XE = $mol_type_enforce<
+	type $mol_touch__allow_draw__RI1G1BWN = $mol_type_enforce<
 		ReturnType< $mol_plot_pane['allow_draw'] >
 		,
 		ReturnType< $mol_touch['allow_draw'] >
 	>
-	type $mol_touch__allow_pan__HBWSCDUA = $mol_type_enforce<
+	type $mol_touch__allow_pan__80JGPJYR = $mol_type_enforce<
 		ReturnType< $mol_plot_pane['allow_pan'] >
 		,
 		ReturnType< $mol_touch['allow_pan'] >
 	>
-	type $mol_touch__allow_zoom__E3BOKR9S = $mol_type_enforce<
+	type $mol_touch__allow_zoom__PJFHF2QD = $mol_type_enforce<
 		ReturnType< $mol_plot_pane['allow_zoom'] >
 		,
 		ReturnType< $mol_touch['allow_zoom'] >
 	>
-	type $mol_touch__draw_start__N3L0W9LP = $mol_type_enforce<
+	type $mol_touch__draw_start__JVJU53AG = $mol_type_enforce<
 		ReturnType< $mol_plot_pane['draw_start'] >
 		,
 		ReturnType< $mol_touch['draw_start'] >
 	>
-	type $mol_touch__draw__AI2TYG10 = $mol_type_enforce<
+	type $mol_touch__draw__AR259MCI = $mol_type_enforce<
 		ReturnType< $mol_plot_pane['draw'] >
 		,
 		ReturnType< $mol_touch['draw'] >
 	>
-	type $mol_touch__draw_end__D3LAH8TN = $mol_type_enforce<
+	type $mol_touch__draw_end__IJJP83Q8 = $mol_type_enforce<
 		ReturnType< $mol_plot_pane['draw_end'] >
 		,
 		ReturnType< $mol_touch['draw_end'] >
 	>
-	type $mol_vector_2d__T4RY71BX = $mol_type_enforce<
+	type $mol_vector_2d__0XOAS3UY = $mol_type_enforce<
 		[ ReturnType< $mol_plot_pane['gap_x'] >, ReturnType< $mol_plot_pane['gap_y'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<$mol_vector_range<number>> >
 	>
-	type $mol_vector_2d__LCK2FD4M = $mol_type_enforce<
+	type $mol_vector_2d__QGNOKL32 = $mol_type_enforce<
 		[ ReturnType< $mol_plot_pane['shift_limit_x'] >, ReturnType< $mol_plot_pane['shift_limit_y'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<$mol_vector_range<number>> >
 	>
-	type $mol_vector_2d__GGQS9LLU = $mol_type_enforce<
+	type $mol_vector_2d__TDNMAELH = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__IG6E4GDD = $mol_type_enforce<
+	type $mol_vector_2d__USISWFII = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__DPKTE8NF = $mol_type_enforce<
+	type $mol_vector_2d__YAQWUZPP = $mol_type_enforce<
 		[ ReturnType< $mol_plot_pane['scale_limit_x'] >, ReturnType< $mol_plot_pane['scale_limit_y'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<$mol_vector_range<number>> >
 	>
-	type $mol_vector_2d__808GHPNF = $mol_type_enforce<
+	type $mol_vector_2d__AKEIQ143 = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__RFK2V12I = $mol_type_enforce<
+	type $mol_vector_2d__HPRKZTKP = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__0D3D4TLP = $mol_type_enforce<
+	type $mol_vector_2d__16N96OTJ = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__7FHIS8TR = $mol_type_enforce<
+	type $mol_vector_2d__5D9QRVWZ = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_vector_2d__FVPEXMJP = $mol_type_enforce<
+	type $mol_vector_2d__ZQYCXV55 = $mol_type_enforce<
 		[ ReturnType< $mol_plot_pane['dimensions_x'] >, ReturnType< $mol_plot_pane['dimensions_y'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<$mol_vector_range<number>> >
 	>
-	type $mol_vector_2d__KO36F7W6 = $mol_type_enforce<
+	type $mol_vector_2d__9KC58ZM6 = $mol_type_enforce<
 		[ ReturnType< $mol_plot_pane['dimensions_viewport_x'] >, ReturnType< $mol_plot_pane['dimensions_viewport_y'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<$mol_vector_range<number>> >
@@ -3134,7 +3134,7 @@ declare namespace $.$$ {
 
 declare namespace $ {
 
-	type $mol_vector_2d__IUTJKZMV = $mol_type_enforce<
+	type $mol_vector_2d__462VUEF6 = $mol_type_enforce<
 		[ ReturnType< $hyoo_map_pane['zoom'] >, ReturnType< $hyoo_map_pane['zoom'] > ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
@@ -3153,57 +3153,57 @@ declare namespace $ {
 //# sourceMappingURL=pane.view.tree.d.ts.map
 declare namespace $ {
 
-	type $mol_view__dom_name__HJGW5HTE = $mol_type_enforce<
+	type $mol_view__dom_name__65F71KJH = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_view['dom_name'] >
 	>
-	type $mol_view__sub__HQY5Q0AF = $mol_type_enforce<
+	type $mol_view__sub__DAPP6TDW = $mol_type_enforce<
 		ReturnType< $mol_page['title_content'] >
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_view__sub__N5VG85Q4 = $mol_type_enforce<
+	type $mol_view__sub__I5TAADTM = $mol_type_enforce<
 		ReturnType< $mol_page['tools'] >
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_view__minimal_height__3FH68PTO = $mol_type_enforce<
+	type $mol_view__minimal_height__ZJL58IYX = $mol_type_enforce<
 		number
 		,
 		ReturnType< $mol_view['minimal_height'] >
 	>
-	type $mol_view__dom_name__IODTHIB8 = $mol_type_enforce<
+	type $mol_view__dom_name__8UZXQOFE = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_view['dom_name'] >
 	>
-	type $mol_view__sub__6TYN2BKQ = $mol_type_enforce<
+	type $mol_view__sub__45XMQIWR = $mol_type_enforce<
 		ReturnType< $mol_page['head'] >
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_page_body_scroll_top__A1QVRK1E = $mol_type_enforce<
+	type $mol_page_body_scroll_top__7GBYUII2 = $mol_type_enforce<
 		Parameters< $mol_page['body_scroll_top'] >[0]
 		,
 		Parameters< ReturnType< $mol_page['Body'] >['scroll_top'] >[0]
 	>
-	type $mol_view__sub__G0D53DU0 = $mol_type_enforce<
+	type $mol_view__sub__KGFYTQ20 = $mol_type_enforce<
 		ReturnType< $mol_page['body'] >
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_scroll__sub__J2GMK4R7 = $mol_type_enforce<
+	type $mol_scroll__sub__JCRH448J = $mol_type_enforce<
 		ReturnType< $mol_page['body_content'] >
 		,
 		ReturnType< $mol_scroll['sub'] >
 	>
-	type $mol_view__dom_name__KDGJSRLT = $mol_type_enforce<
+	type $mol_view__dom_name__1BZ5QQFJ = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_view['dom_name'] >
 	>
-	type $mol_view__sub__0MHM364V = $mol_type_enforce<
+	type $mol_view__sub__1DAZDLUR = $mol_type_enforce<
 		ReturnType< $mol_page['foot'] >
 		,
 		ReturnType< $mol_view['sub'] >
@@ -3391,142 +3391,142 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_search__query__8JHW1J1K = $mol_type_enforce<
+	type $mol_search__query__O95EV0JC = $mol_type_enforce<
 		ReturnType< $hyoo_map['query'] >
 		,
 		ReturnType< $mol_search['query'] >
 	>
-	type $mol_search__submit__H0HS7CXZ = $mol_type_enforce<
+	type $mol_search__submit__Q9J92GGG = $mol_type_enforce<
 		ReturnType< $hyoo_map['search'] >
 		,
 		ReturnType< $mol_search['submit'] >
 	>
-	type $mol_check_icon__hint__5SKG5L9Y = $mol_type_enforce<
+	type $mol_check_icon__hint__3VC7HI7D = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_check_icon['hint'] >
 	>
-	type $mol_check_icon__checked__S0UPSBZB = $mol_type_enforce<
+	type $mol_check_icon__checked__6Z6G9OLD = $mol_type_enforce<
 		ReturnType< $hyoo_map['photo'] >
 		,
 		ReturnType< $mol_check_icon['checked'] >
 	>
-	type $mol_check_icon__Icon__CKGZXN1Z = $mol_type_enforce<
+	type $mol_check_icon__Icon__G0JV8FEC = $mol_type_enforce<
 		ReturnType< $hyoo_map['Photo_icon'] >
 		,
 		ReturnType< $mol_check_icon['Icon'] >
 	>
-	type $mol_link_iconed__hint__75VE9V5K = $mol_type_enforce<
+	type $mol_link_iconed__hint__6T46ZBS2 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link_iconed['hint'] >
 	>
-	type $mol_link_iconed__uri__XB9H3PCJ = $mol_type_enforce<
+	type $mol_link_iconed__uri__GME5XK7M = $mol_type_enforce<
 		ReturnType< $hyoo_map['draw_uri'] >
 		,
 		ReturnType< $mol_link_iconed['uri'] >
 	>
-	type $mol_link_iconed__sub__9YAV24R7 = $mol_type_enforce<
+	type $mol_link_iconed__sub__M4N0N3EL = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_link_iconed['sub'] >
 	>
-	type $mol_link_source__uri__IIPGDKSD = $mol_type_enforce<
+	type $mol_link_source__uri__KW838XP9 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link_source['uri'] >
 	>
-	type $hyoo_map_geo_to_tile_x__8I61Q8TQ = $mol_type_enforce<
+	type $hyoo_map_geo_to_tile_x__EH5I2JQY = $mol_type_enforce<
 		Parameters< $hyoo_map['geo_to_tile_x'] >[0]
 		,
 		Parameters< ReturnType< $hyoo_map['Pane'] >['geo_to_tile_x'] >[0]
 	>
-	type $hyoo_map_geo_to_tile_y__1TFUZV8D = $mol_type_enforce<
+	type $hyoo_map_geo_to_tile_y__BZQE092F = $mol_type_enforce<
 		Parameters< $hyoo_map['geo_to_tile_y'] >[0]
 		,
 		Parameters< ReturnType< $hyoo_map['Pane'] >['geo_to_tile_y'] >[0]
 	>
-	type $mol_vector_2d__94N19Q2C = $mol_type_enforce<
+	type $mol_vector_2d__18P2DORE = $mol_type_enforce<
 		[ number, number ]
 		,
 		ConstructorParameters< typeof $mol_vector_2d<number> >
 	>
-	type $mol_plot_map_tiles__level_pyramid__NZMFK92Y = $mol_type_enforce<
+	type $mol_plot_map_tiles__level_pyramid__VFGDKYDA = $mol_type_enforce<
 		number
 		,
 		ReturnType< $mol_plot_map_tiles['level_pyramid'] >
 	>
-	type $mol_plot_map_tiles__tile_size_real__9GRKU86A = $mol_type_enforce<
+	type $mol_plot_map_tiles__tile_size_real__1BDDF288 = $mol_type_enforce<
 		ReturnType< $hyoo_map['tile_size'] >
 		,
 		ReturnType< $mol_plot_map_tiles['tile_size_real'] >
 	>
-	type $mol_plot_map_tiles__uri_template__0TC2V52W = $mol_type_enforce<
+	type $mol_plot_map_tiles__uri_template__HJXCU6SX = $mol_type_enforce<
 		ReturnType< $hyoo_map['tiles_uri'] >
 		,
 		ReturnType< $mol_plot_map_tiles['uri_template'] >
 	>
-	type $hyoo_map_pane__allow_draw__3FHRL65Z = $mol_type_enforce<
+	type $hyoo_map_pane__allow_draw__TGVLFYB2 = $mol_type_enforce<
 		boolean
 		,
 		ReturnType< $hyoo_map_pane['allow_draw'] >
 	>
-	type $hyoo_map_pane__zoom__T3O1651X = $mol_type_enforce<
+	type $hyoo_map_pane__zoom__H9M6LOTE = $mol_type_enforce<
 		ReturnType< $hyoo_map['zoom'] >
 		,
 		ReturnType< $hyoo_map_pane['zoom'] >
 	>
-	type $hyoo_map_pane__shift__Q0RE6DQC = $mol_type_enforce<
+	type $hyoo_map_pane__shift__COW1FRAT = $mol_type_enforce<
 		ReturnType< $hyoo_map['center'] >
 		,
 		ReturnType< $hyoo_map_pane['shift'] >
 	>
-	type $hyoo_map_pane__graphs__IVP149XW = $mol_type_enforce<
+	type $hyoo_map_pane__graphs__K4T37JZI = $mol_type_enforce<
 		ReturnType< $hyoo_map['graphs'] >
 		,
 		ReturnType< $hyoo_map_pane['graphs'] >
 	>
-	type $mol_link__title__KG8QITOC = $mol_type_enforce<
+	type $mol_link__title__I2YZESB3 = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['title'] >
 	>
-	type $mol_link__uri__KI0Y3KTM = $mol_type_enforce<
+	type $mol_link__uri__PQLCYZVM = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link['uri'] >
 	>
-	type $mol_link_iconed__title__65FRBCWQ = $mol_type_enforce<
+	type $mol_link_iconed__title__6TZ3YD2R = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link_iconed['title'] >
 	>
-	type $mol_link_iconed__uri__J6855UHI = $mol_type_enforce<
+	type $mol_link_iconed__uri__AASTKKBD = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link_iconed['uri'] >
 	>
-	type $mol_link_iconed__title__FOMEVUFG = $mol_type_enforce<
+	type $mol_link_iconed__title__B8GAFWZV = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link_iconed['title'] >
 	>
-	type $mol_link_iconed__uri__947GHACK = $mol_type_enforce<
+	type $mol_link_iconed__uri__MZ506JYV = $mol_type_enforce<
 		string
 		,
 		ReturnType< $mol_link_iconed['uri'] >
 	>
-	type $mol_view__sub__3FRXYXGY = $mol_type_enforce<
+	type $mol_view__sub__B0HTHTRO = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_view['sub'] >
 	>
-	type $mol_page__head__U60JRQEP = $mol_type_enforce<
+	type $mol_page__head__EKKPHTBM = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_page['head'] >
 	>
-	type $mol_page__sub__T11SZ9ZU = $mol_type_enforce<
+	type $mol_page__sub__TXYHH9EE = $mol_type_enforce<
 		ReturnType< $hyoo_map['main_sub'] >
 		,
 		ReturnType< $mol_page['sub'] >
@@ -3584,12 +3584,12 @@ declare namespace $ {
 
 declare namespace $ {
 
-	type $mol_svg_path__geometry__JJV4FXNJ = $mol_type_enforce<
+	type $mol_svg_path__geometry__I9Z14D8W = $mol_type_enforce<
 		ReturnType< $mol_plot_dot['curve'] >
 		,
 		ReturnType< $mol_svg_path['geometry'] >
 	>
-	type $mol_plot_graph_sample__color__GWL2PSU3 = $mol_type_enforce<
+	type $mol_plot_graph_sample__color__JVJYOK5Y = $mol_type_enforce<
 		ReturnType< $mol_plot_dot['color'] >
 		,
 		ReturnType< $mol_plot_graph_sample['color'] >
@@ -3637,22 +3637,22 @@ declare namespace $.$$ {
 
 declare namespace $ {
 
-	type $mol_plot_dot__repos_x__3H65OBJJ = $mol_type_enforce<
+	type $mol_plot_dot__repos_x__KA91CB54 = $mol_type_enforce<
 		ReturnType< $hype_escape_map['geo_to_tile_x'] >
 		,
 		ReturnType< $mol_plot_dot['repos_x'] >
 	>
-	type $mol_plot_dot__repos_y__TK1FAQVD = $mol_type_enforce<
+	type $mol_plot_dot__repos_y__PWLW8V5F = $mol_type_enforce<
 		ReturnType< $hype_escape_map['geo_to_tile_y'] >
 		,
 		ReturnType< $mol_plot_dot['repos_y'] >
 	>
-	type $mol_plot_dot__series_x__6LHJX5G4 = $mol_type_enforce<
+	type $mol_plot_dot__series_x__QMCBR3SU = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_plot_dot['series_x'] >
 	>
-	type $mol_plot_dot__series_y__R85HD47S = $mol_type_enforce<
+	type $mol_plot_dot__series_y__TM7R33CU = $mol_type_enforce<
 		readonly(any)[]
 		,
 		ReturnType< $mol_plot_dot['series_y'] >
