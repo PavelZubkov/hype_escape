@@ -145,7 +145,7 @@
     "$mol_nav",
     "$mol_locale",
     "$mol_string",
-    "$mol_icon_cross",
+    "$mol_icon_close",
     "$mol_icon",
     "$mol_svg_root",
     "$mol_svg",
