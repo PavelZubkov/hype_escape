@@ -2112,19 +2112,30 @@ var $;
     $.$mol_run_error = $mol_run_error;
     const child_process = $node['child_process'];
     $.$mol_run_spawn = child_process.spawn.bind(child_process);
+    $.$mol_run_spawn_sync = child_process.spawnSync.bind(child_process);
     function $mol_run_async({ dir, timeout, command, env }) {
         const args_raw = typeof command === 'string' ? command.split(' ') : command;
         const [app, ...args] = args_raw;
-        this.$mol_log3_come({
-            place: '$mol_run_async',
-            dir: $node.path.relative('', dir),
-            message: 'Run',
-            command: args_raw.join(' '),
-        });
+        if (!env?.MOL_RUN_ASYNC) {
+            this.$mol_log3_come({
+                place: '$mol_run_sync',
+                message: 'Run',
+                command: args_raw.join(' '),
+                dir: $node.path.relative('', dir),
+            });
+            return this.$mol_run_spawn_sync(app, args, { shell: true, cwd: dir, env });
+        }
         const sub = this.$mol_run_spawn(app, args, {
             shell: true,
             cwd: dir,
             env
+        });
+        this.$mol_log3_come({
+            place: '$mol_run_async',
+            pid: sub.pid,
+            message: 'Run',
+            command: args_raw.join(' '),
+            dir: $node.path.relative('', dir),
         });
         let killed = false;
         let timer;
@@ -2161,6 +2172,14 @@ var $;
                     get stdout() { return Buffer.concat(std_data); },
                     get stderr() { return Buffer.concat(error_data); }
                 };
+                this.$mol_log3_done({
+                    place: '$mol_run_async',
+                    pid: sub.pid,
+                    message: 'Run',
+                    status,
+                    command: args_raw.join(' '),
+                    dir: $node.path.relative('', dir),
+                });
                 if (error || status || killed)
                     return fail(new $mol_run_error((res.stderr.toString() || res.stdout.toString() || 'Run error') + (killed ? ', timeout' : ''), { signal, timeout: killed }, ...error ? [error] : []));
                 done(res);
@@ -8420,9 +8439,6 @@ var $;
 
 ;
 "use strict";
-
-;
-"use strict";
 var $;
 (function ($) {
     var $$;
@@ -8442,6 +8458,9 @@ var $;
         $$.$hyoo_map_pane = $hyoo_map_pane;
     })($$ = $.$$ || ($.$$ = {}));
 })($ || ($ = {}));
+
+;
+"use strict";
 
 ;
 	($.$mol_page) = class $mol_page extends ($.$mol_view) {
@@ -9174,9 +9193,6 @@ var $;
 
 ;
 "use strict";
-
-;
-"use strict";
 var $;
 (function ($) {
     var $$;
@@ -9266,6 +9282,9 @@ var $;
 (function ($) {
     $mol_style_attach("hyoo/map/map.view.css", "[hyoo_map] {\n\tdisplay: grid;\n\tflex: 1 1 20rem;\n}\n\n[hyoo_map] > * {\n\tgrid-area: 1/1;\n}\n\n[hyoo_map_main] {\n\tdisplay: grid;\n\tcontain: strict;\n}\n\n[hyoo_map_main_head] {\n\tgrid-area: 1 / 1;\n\tflex-wrap: nowrap;\n\tmargin-bottom: auto;\n\tbackground: none;\n\tbox-shadow: none;\n}\n\n[hyoo_map_pane] {\n\twidth: 100%;\n\tgrid-area: 1 / 1;\n}\n\n[hyoo_map_attribution] {\n\tgrid-area: 1 / 1;\n\tmargin-top: auto;\n\tmargin-left: auto;\n\tpadding: var(--mol_gap_block);\n}\n\n[hyoo_map_tiles_tile] {\n\tfilter: var(--mol_theme_image);\n}\n\n[hyoo_map_photo] {\n\t[hyoo_map_tiles_tile] {\n\t\tfilter: none;\n\t}\n}\n");
 })($ || ($ = {}));
+
+;
+"use strict";
 
 ;
 	($.$mol_plot_dot) = class $mol_plot_dot extends ($.$mol_plot_graph) {
@@ -10528,7 +10547,7 @@ var $;
             });
             let message = '';
             try {
-                const res = await $mol_wire_async(context_mock).$mol_run({ command: 'sleep 10', dir: '.', timeout: 10 });
+                const res = await $mol_wire_async(context_mock).$mol_run({ command: 'sleep 10', dir: '.', timeout: 10, env: { 'MOL_RUN_ASYNC': '1' } });
             }
             catch (e) {
                 message = e.message;
