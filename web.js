@@ -3410,7 +3410,7 @@ var $;
             },
             '@media': {
                 'print': {
-                    overflow: 'visible',
+                    overflow: 'hidden',
                     contain: 'none',
                     maxHeight: 'unset',
                 },
@@ -8456,6 +8456,13 @@ var $;
                     shadow: [[0, `0.5rem`, `0.5rem`, `-0.5rem`, hsla(0, 0, 0, .25)]],
                 },
                 zIndex: 2,
+                '@media': {
+                    'print': {
+                        box: {
+                            shadow: [[0, `1px`, 0, 0, hsla(0, 0, 0, .25)]],
+                        },
+                    },
+                },
             },
             Title: {
                 minHeight: rem(2),
@@ -8484,6 +8491,11 @@ var $;
                 justifyContent: 'flex-end',
                 alignItems: 'flex-start',
                 flexWrap: 'wrap',
+                '@media': {
+                    'print': {
+                        display: 'none',
+                    },
+                },
             },
             Body: {
                 flex: {
