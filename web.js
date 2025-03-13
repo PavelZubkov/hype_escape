@@ -6893,11 +6893,17 @@ var $;
         added1(diff) {
             return this.merged(diff, (a, b) => a + b);
         }
+        substracted1(diff) {
+            return this.merged(diff, (a, b) => a - b);
+        }
         multed0(mult) {
             return this.map(value => value * mult);
         }
         multed1(mults) {
             return this.merged(mults, (a, b) => a * b);
+        }
+        divided1(mults) {
+            return this.merged(mults, (a, b) => a / b);
         }
         powered0(mult) {
             return this.map(value => value ** mult);
@@ -7325,6 +7331,9 @@ var $;
 		tile_uri(id){
 			return "";
 		}
+		tile_dims_real(){
+			return [(this.tile_size_real()), (this.tile_size_real())];
+		}
 		tile_size_real(){
 			return 256;
 		}
@@ -7348,7 +7357,7 @@ var $;
 			(obj.style) = () => ({"transform": (this.tile_transform(id))});
 			(obj.uri) = () => ((this.tile_uri(id)));
 			(obj.pos) = () => ([0, 0]);
-			(obj.size) = () => ([(this.tile_size_real()), (this.tile_size_real())]);
+			(obj.size) = () => ((this.tile_dims_real()));
 			return obj;
 		}
 	};
@@ -7413,19 +7422,19 @@ var $;
                 const [shift_x, shift_y] = this.shift();
                 const [scale_x, scale_y] = this.scale();
                 const count = 1 << level;
-                const tile_size = this.tile_size_real();
-                const pos_x = ((x / count - .5) * tile_size * scale_x + shift_x);
-                const pos_y = ((y / count - .5) * tile_size * scale_y + shift_y);
-                const scale = scale_x / 2 ** level + .5 / tile_size;
+                const tile_size = this.tile_dims_real();
+                const pos_x = ((x / count - .5) * tile_size[0] * scale_x + shift_x);
+                const pos_y = ((y / count - .5) * tile_size[1] * scale_y + shift_y);
+                const scale = scale_x / 2 ** level + .5 / tile_size[1];
                 return `translate3d(${pos_x}px,${pos_y}px,0px) scale(${scale})`;
             }
             tile_at(pos) {
                 const [level, x, y] = pos;
                 const count = 1 << level;
-                const tile_size = this.tile_size_real();
+                const tile_size = this.tile_dims_real();
                 return [
-                    Math.floor((x / tile_size + .5) * count),
-                    Math.floor((y / tile_size + .5) * count),
+                    Math.floor((x / tile_size[0] + .5) * count),
+                    Math.floor((y / tile_size[1] + .5) * count),
                 ];
             }
             back() {
